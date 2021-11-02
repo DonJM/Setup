@@ -8,11 +8,7 @@ class Setup_Path:
         'unripe',
         'ripe',
         'overripe',
-        'rotten',
-        'blemish',
-        'bruise',
-        'mold',
-        'blackspot'
+        'rotten'
     ]
 
     def files(self,pretrained_model_name, pretrained_model_url):
@@ -36,6 +32,7 @@ class Setup_Path:
             "IMAGES_PATH":os.path.join("Tensorflow", "workspace", "images"),
             "TRAINING_IMAGES_PATH":os.path.join("Tensorflow", "workspace", "images", "train"),
             "TESTING_IMAGES_PATH":os.path.join("Tensorflow", "workspace", "images", "test"),
+            "EVALUATE_IMAGES_PATH":os.path.join("Tensorflow", "workspace", "images", "eval"),
             "PRETRAINED_MODELS_PATH":os.path.join("Tensorflow", "workspace", "pretrained_models"),
             "PREPROCESSED_IMAGE_PATH":os.path.join("Tensorflow", "addons", "preprocessedImage"),
             "ORIGINAL_IMAGES_PATH":os.path.join("Tensorflow", "addons", "originalImage"),   
